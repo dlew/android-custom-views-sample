@@ -7,5 +7,5 @@
     <dimen name="user_icon_name_margin">4dp</dimen>
 
     <dimen name="sample_padding">24dp</dimen>
-    <dimen name="sample_title_padding">16dp</dimen>
+    <dimen name="sample_title_padding">12dp</dimen>
 </resources>
