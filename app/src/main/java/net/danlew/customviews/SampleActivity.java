@@ -28,8 +28,14 @@ public class SampleActivity extends Activity {
         // Binds without a custom View, as demonstration
         addNonCustomView();
 
-        // Simple Compound View demonstration
+        // Simple compound View demonstration
         addCompoundUserView();
+
+        // Simple compound View demonstration without as many Views
+        addCompoundMinUserView();
+
+        // Encapsulation-bound compound View demonstration
+        addEncapsulatedUserView();
     }
 
     private void addSample(CharSequence title, View sample) {
@@ -58,5 +64,20 @@ public class SampleActivity extends Activity {
         userView.setIcon(mUser.getIcon());
 
         addSample("Simple compound View", userView);
+    }
+
+    private void addCompoundMinUserView() {
+        UserViewCompoundMin userView = new UserViewCompoundMin(this);
+        userView.setName(mUser.getName());
+        userView.setIcon(mUser.getIcon());
+
+        addSample("Simple compound View", userView);
+    }
+
+    private void addEncapsulatedUserView() {
+        UserViewEncapsulated userView = new UserViewEncapsulated(this);
+        userView.bind(mUser);
+
+        addSample("Encapsulated compound View", userView);
     }
 }
