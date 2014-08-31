@@ -36,6 +36,9 @@ public class SampleActivity extends Activity {
 
         // UserView with XML-defined attributes
         addStyledUserView();
+
+        // UserView with a CircleView in it
+        addCircleUserView();
     }
 
     private void addSample(CharSequence title, View sample) {
@@ -81,5 +84,12 @@ public class SampleActivity extends Activity {
         userView.bind(mUser);
 
         addSample("Styled UserView", userView);
+    }
+
+    private void addCircleUserView() {
+        UserViewCircle userView = new UserViewCircle(this);
+        userView.bind(mUser);
+
+        addSample("UserView w/ custom drawing", userView);
     }
 }
