@@ -1,4 +1,4 @@
-package net.danlew.customviews;
+package net.danlew.customviews.data;
 
 /**
  * Represents a user

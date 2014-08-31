@@ -1,4 +1,4 @@
-package net.danlew.customviews;
+package net.danlew.customviews.view;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -6,16 +6,18 @@ import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import net.danlew.customviews.R;
+import net.danlew.customviews.data.User;
 
 /**
- * Simple UserView that wraps multiple Views together. Does nothing else.
+ * UserView that has a special knowledge of how to bind relevant data.
  */
-public class UserViewCompound extends LinearLayout {
+public class UserViewEncapsulated extends LinearLayout {
 
     private ImageView mIconView;
     private TextView mNameView;
 
-    public UserViewCompound(Context context) {
+    public UserViewEncapsulated(Context context) {
         super(context);
 
         setOrientation(LinearLayout.VERTICAL);
@@ -26,11 +28,8 @@ public class UserViewCompound extends LinearLayout {
         mNameView = (TextView) findViewById(R.id.name);
     }
 
-    public void setIcon(int drawable) {
-        mIconView.setImageResource(drawable);
-    }
-
-    public void setName(CharSequence name) {
-        mNameView.setText(name);
+    public void bind(User user) {
+        mIconView.setImageResource(user.getIcon());
+        mNameView.setText(user.getName());
     }
 }

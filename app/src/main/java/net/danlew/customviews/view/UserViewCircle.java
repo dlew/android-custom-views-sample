@@ -1,10 +1,12 @@
-package net.danlew.customviews;
+package net.danlew.customviews.view;
 
 import android.content.Context;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import net.danlew.customviews.R;
+import net.danlew.customviews.data.User;
 
 /**
  * UserView that lets you tint the icon view a color from attributes.

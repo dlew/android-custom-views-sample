@@ -8,6 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Space;
 import android.widget.TextView;
+import net.danlew.customviews.data.User;
+import net.danlew.customviews.view.SampleView;
+import net.danlew.customviews.view.UserViewAttrs;
+import net.danlew.customviews.view.UserViewCircle;
+import net.danlew.customviews.view.UserViewCompound;
+import net.danlew.customviews.view.UserViewEncapsulated;
 
 public class SampleActivity extends Activity {
 

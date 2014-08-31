@@ -1,4 +1,4 @@
-<net.danlew.customviews.UserViewAttrs
+<net.danlew.customviews.view.UserViewAttrs
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"

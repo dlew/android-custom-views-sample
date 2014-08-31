@@ -1,4 +1,4 @@
-package net.danlew.customviews;
+package net.danlew.customviews.view;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import net.danlew.customviews.R;
 
 /**
  * The sample View is a custom View! When will the madness end?!

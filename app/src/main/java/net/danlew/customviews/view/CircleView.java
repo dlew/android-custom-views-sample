@@ -1,4 +1,4 @@
-package net.danlew.customviews;
+package net.danlew.customviews.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
