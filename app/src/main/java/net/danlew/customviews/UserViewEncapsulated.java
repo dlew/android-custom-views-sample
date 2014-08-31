@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
- * Simple UserView that wraps multiple Views together. Does nothing else.
+ * UserView that has a special knowledge of how to bind relevant data.
  */
 public class UserViewEncapsulated extends LinearLayout {
 

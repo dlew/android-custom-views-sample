@@ -33,6 +33,9 @@ public class SampleActivity extends Activity {
 
         // Encapsulation-bound compound View demonstration
         addEncapsulatedUserView();
+
+        // UserView with XML-defined attributes
+        addStyledUserView();
     }
 
     private void addSample(CharSequence title, View sample) {
@@ -68,5 +71,15 @@ public class SampleActivity extends Activity {
         userView.bind(mUser);
 
         addSample("Encapsulated compound View", userView);
+    }
+
+    private void addStyledUserView() {
+        // Normally you would provide a way to set these attributes in code; in our case
+        // we're demonstrating XML attributes so we're doing it the hard way.
+        UserViewAttrs userView = (UserViewAttrs) LayoutInflater.from(this)
+            .inflate(R.layout.user_view_attrs, null, false);
+        userView.bind(mUser);
+
+        addSample("Styled UserView", userView);
     }
 }
