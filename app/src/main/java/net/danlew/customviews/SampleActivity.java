@@ -31,9 +31,6 @@ public class SampleActivity extends Activity {
         // Simple compound View demonstration
         addCompoundUserView();
 
-        // Simple compound View demonstration without as many Views
-        addCompoundMinUserView();
-
         // Encapsulation-bound compound View demonstration
         addEncapsulatedUserView();
     }
@@ -60,14 +57,6 @@ public class SampleActivity extends Activity {
 
     private void addCompoundUserView() {
         UserViewCompound userView = new UserViewCompound(this);
-        userView.setName(mUser.getName());
-        userView.setIcon(mUser.getIcon());
-
-        addSample("Simple compound View", userView);
-    }
-
-    private void addCompoundMinUserView() {
-        UserViewCompoundMin userView = new UserViewCompoundMin(this);
         userView.setName(mUser.getName());
         userView.setIcon(mUser.getIcon());
 
