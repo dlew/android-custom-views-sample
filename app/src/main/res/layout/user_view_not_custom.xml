@@ -15,6 +15,7 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/user_icon_name_margin" />
+        android:layout_marginTop="@dimen/user_icon_name_margin"
+        android:textSize="@dimen/user_name_size" />
 
 </LinearLayout>
